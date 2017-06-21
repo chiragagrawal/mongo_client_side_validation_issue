@@ -1,0 +1,9 @@
+<%= simple_form_for @user, validate: true do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :email %>
+    <%= f.input :notes %>
+    <%= f.input :avatar, as: :file, class: 'form-control', hint: "The image should be exact 373x200."%>
+    <%= f.input :password %>
+    <%= f.button :submit %>
+<% end %>
